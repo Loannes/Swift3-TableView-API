@@ -18,28 +18,21 @@ class ListViewController : UITableViewController {
 
     @IBAction func more(_ sender: AnyObject) {
         self.page += 1
-        
         self.callMovieAPI()
-        
         self.movieTable.reloadData()
     }
     
-    
     override func viewDidLoad() {
-        
         self.callMovieAPI()
-        
     }
-    
-    
-    
+
     // API 서버로부터 데이터를 받아와 데이터 셋에 넣는다
     func callMovieAPI() {
         let apiURI = URL(string: "http://apis.skplanetx.com/hoppin/movies?order=releasedateasc&count=10&page=\(self.page)&genreID=&version=1&appKey=4c076579-9197-3e63-a809-6256fd2027d3")
         
         let apidata : Data? = try? Data(contentsOf: apiURI!)
         
-        // NSLog("API Result=%@", NSString(data: apidata!, encoding:  String.Encoding.utf8.rawValue)!)
+        NSLog("API Result=%@", NSString(data: apidata!, encoding:  String.Encoding.utf8.rawValue)!)
         
         // json으로 데이터를 파싱할때는 예외구문을 쓴다.
         // 만일 서버 네트워크가 끈기거나 오류가 발생할 경우 예외처리를 해야한다
@@ -69,8 +62,8 @@ class ListViewController : UITableViewController {
             
             mvo.title = "temp title"
             mvo.description = "temp description"
-            mvo.thumbnail = "http://img.4k-wallpaper.net/medium/yoga-pose-at-sunlight_325.jpeg"
-            mvo.detail = "http://???"
+            mvo.thumbnail = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTd9RvsorRhuWaEuwey_9rgFK1hDyb4piQUpGJ0YoyC4ejTT23GA"
+            mvo.detail = "https:stripes.co.kr"
             mvo.rating = 7.0
             
             self.list.append(mvo)
@@ -78,7 +71,6 @@ class ListViewController : UITableViewController {
             self.list.append(mvo)
             self.list.append(mvo)
             self.list.append(mvo)
-            
             
         } catch {
             //NSLog("Parse Error!!")
@@ -111,13 +103,6 @@ class ListViewController : UITableViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
     // MARK: - Talble View delegate
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.list.count
@@ -144,8 +129,6 @@ class ListViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         NSLog("Touch Table Row at %d", (indexPath as NSIndexPath).row)
     }
-    
-    
     
     // MARK: - Segue 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

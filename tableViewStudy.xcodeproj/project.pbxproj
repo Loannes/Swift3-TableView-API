@@ -14,9 +14,6 @@
 		10289A5A1D7BE833008B2BF1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10289A591D7BE833008B2BF1 /* ListViewController.swift */; };
 		10289A5C1D7BE90C008B2BF1 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10289A5B1D7BE90C008B2BF1 /* MovieVO.swift */; };
 		10289A5E1D7C03E5008B2BF1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10289A5D1D7C03E5008B2BF1 /* MovieCell.swift */; };
-		10289A631D7C07EF008B2BF1 /* thor.png in Resources */ = {isa = PBXBuildFile; fileRef = 10289A601D7C07EF008B2BF1 /* thor.png */; };
-		10289A641D7C07EF008B2BF1 /* avengers.png in Resources */ = {isa = PBXBuildFile; fileRef = 10289A611D7C07EF008B2BF1 /* avengers.png */; };
-		10289A651D7C07EF008B2BF1 /* darkknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 10289A621D7C07EF008B2BF1 /* darkknight.png */; };
 		10DC50461D7EAF2B001CEFA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DC50451D7EAF2B001CEFA4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +27,6 @@
 		10289A591D7BE833008B2BF1 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		10289A5B1D7BE90C008B2BF1 /* MovieVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
 		10289A5D1D7C03E5008B2BF1 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		10289A601D7C07EF008B2BF1 /* thor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thor.png; sourceTree = "<group>"; };
-		10289A611D7C07EF008B2BF1 /* avengers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avengers.png; sourceTree = "<group>"; };
-		10289A621D7C07EF008B2BF1 /* darkknight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkknight.png; sourceTree = "<group>"; };
 		10DC50451D7EAF2B001CEFA4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,28 +60,17 @@
 		10289A461D7BE7F5008B2BF1 /* tableViewStudy */ = {
 			isa = PBXGroup;
 			children = (
-				10289A5F1D7C07DA008B2BF1 /* Resources */,
+				10289A4B1D7BE7F5008B2BF1 /* Main.storyboard */,
+				10289A5B1D7BE90C008B2BF1 /* MovieVO.swift */,
+				10289A5D1D7C03E5008B2BF1 /* MovieCell.swift */,
 				10289A471D7BE7F5008B2BF1 /* AppDelegate.swift */,
 				10289A591D7BE833008B2BF1 /* ListViewController.swift */,
 				10DC50451D7EAF2B001CEFA4 /* DetailViewController.swift */,
-				10289A4B1D7BE7F5008B2BF1 /* Main.storyboard */,
-				10289A5D1D7C03E5008B2BF1 /* MovieCell.swift */,
-				10289A5B1D7BE90C008B2BF1 /* MovieVO.swift */,
 				10289A4E1D7BE7F5008B2BF1 /* Assets.xcassets */,
 				10289A501D7BE7F5008B2BF1 /* LaunchScreen.storyboard */,
 				10289A531D7BE7F5008B2BF1 /* Info.plist */,
 			);
 			path = tableViewStudy;
-			sourceTree = "<group>";
-		};
-		10289A5F1D7C07DA008B2BF1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				10289A601D7C07EF008B2BF1 /* thor.png */,
-				10289A611D7C07EF008B2BF1 /* avengers.png */,
-				10289A621D7C07EF008B2BF1 /* darkknight.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10289A651D7C07EF008B2BF1 /* darkknight.png in Resources */,
-				10289A631D7C07EF008B2BF1 /* thor.png in Resources */,
 				10289A521D7BE7F5008B2BF1 /* LaunchScreen.storyboard in Resources */,
-				10289A641D7C07EF008B2BF1 /* avengers.png in Resources */,
 				10289A4F1D7BE7F5008B2BF1 /* Assets.xcassets in Resources */,
 				10289A4D1D7BE7F5008B2BF1 /* Main.storyboard in Resources */,
 			);

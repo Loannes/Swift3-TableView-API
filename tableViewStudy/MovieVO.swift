@@ -11,21 +11,13 @@ import UIKit
 
 class MovieVO {
     init() {
-        
-    
     }
     
     var thumbnail : String?
-    
     var title : String?
-    
     var description : String?
-    
     var detail : String?
-    
     var opendate : String?
-    
     var rating : Float?
-    
     var thumbnailImage : UIImage?
 }
